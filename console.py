@@ -284,16 +284,16 @@ class Console:
                                 s = requests.session()
                                 if ip == username:
                                     logger.info("send to database")
-                                    s.get(DATABASE_ENDPOINT + "?IP=" + str(
-                                        ip) + "&MONEY=" + str(money) + "&IPSP=" + str(ipsplevel) + "&FW=" + str(
-                                        fwlevel) + "&AV=" + str(avlevel), timeout=15)
-                                    s.close()
+                                    #s.get(DATABASE_ENDPOINT + "?IP=" + str(
+                                    #    ip) + "&MONEY=" + str(money) + "&IPSP=" + str(ipsplevel) + "&FW=" + str(
+                                    #    fwlevel) + "&AV=" + str(avlevel), timeout=15)
+                                    #s.close()
                                 else:
                                     logger.info("send to database")
-                                    s.get(DATABASE_ENDPOINT + "?IP=" + str(
-                                        ip) + "&USR=" + str(username) + "&MONEY=" + str(money) + "&IPSP=" + str(
-                                        ipsplevel) + "&FW=" + str(fwlevel) + "&AV=" + str(avlevel), timeout=15)
-                                    s.close()
+                                    #s.get(DATABASE_ENDPOINT + "?IP=" + str(
+                                    #    ip) + "&USR=" + str(username) + "&MONEY=" + str(money) + "&IPSP=" + str(
+                                    #    ipsplevel) + "&FW=" + str(fwlevel) + "&AV=" + str(avlevel), timeout=15)
+                                    #s.close()
                             else:
                                 logger.info("\nYour Money: {:11,}$\n[TargetIP: {}]\n\nMade {:11,}$ and {:2d}Rep.\n Antivirus: {} Firewall: {} Sdk: {} TotalMoney: {:11,}$\n YourWinChance: {} Anonymous: {} username: {} saving: {}\n".format(
                                             jsons['newmoney'], ip, jsons['amount'], jsons['eloch'], avlevel, fwlevel, sdklevel, money, winchance, anonymous, username, saving))
@@ -305,16 +305,16 @@ class Console:
                                 s = requests.session()
                                 if ip == username:
                                     logger.info("send to database")
-                                    s.get(DATABASE_ENDPOINT + "?IP=" + str(
-                                        ip) + "&MONEY=" + str(money) + "&IPSP=" + str(ipsplevel) + "&FW=" + str(
-                                        fwlevel) + "&AV=" + str(avlevel), timeout=15)
-                                    s.close()
+                                    #s.get(DATABASE_ENDPOINT + "?IP=" + str(
+                                    #    ip) + "&MONEY=" + str(money) + "&IPSP=" + str(ipsplevel) + "&FW=" + str(
+                                    #    fwlevel) + "&AV=" + str(avlevel), timeout=15)
+                                    #s.close()
                                 else:
                                     logger.info("send to database")
-                                    s.get(DATABASE_ENDPOINT + "?IP=" + str(
-                                        ip) + "&USR=" + str(username) + "&MONEY=" + str(money) + "&IPSP=" + str(
-                                        ipsplevel) + "&FW=" + str(fwlevel) + "&AV=" + str(avlevel), timeout=15)
-                                    s.close()
+                                    #s.get(DATABASE_ENDPOINT + "?IP=" + str(
+                                    #    ip) + "&USR=" + str(username) + "&MONEY=" + str(money) + "&IPSP=" + str(
+                                    #    ipsplevel) + "&FW=" + str(fwlevel) + "&AV=" + str(avlevel), timeout=15)
+                                    #s.close()
 
                                 return True
 
